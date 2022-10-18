@@ -1,0 +1,154 @@
+/*============general requirements============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bg-img-home: url(/assets/mountains-universe-1.png);
+    --bg-img-universe: url(/assets/mountains-universe-2.png);
+    --bg-img-exploration: url(/assets/mountains-universe-3.png);
+
+    --menu-txt-color: #C4C4CC;
+    --menu-txt-color-selected: #FFFFFF;
+    
+    --title-txt-color: #E1E1E6;
+    --p-txt-color: #E1E1E6;
+}
+
+body.bg-img-home {
+    background-image: var(--bg-img-home);
+}
+body.bg-img-universe {
+    background-image: var(--bg-img-universe);
+}
+body.bg-img-exploration {
+    background-image: var(--bg-img-exploration);
+}
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+nav {
+    width: 100vw;
+    padding: 4rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: var(--menu-txt-color);
+}
+
+a:hover{
+    font-weight: 700;
+    color: var(--menu-txt-color-selected);
+    cursor: pointer;
+}
+
+.menu {
+    margin-left: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6rem;
+    color: var(--title-txt-color);
+}
+
+/*============page home============*/
+.app-home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    width: 40rem;
+    height: 13.5rem;
+    margin-top: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19.5rem;
+    height: 4.8rem;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    cursor: pointer ;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.button:hover {
+    background: #FFFFFF;
+    color: #02799D;
+}
+
+.svg {
+    transition: 250ms;
+}
+.svg:hover {
+    transform: scale(1.1);
+}
+
+/*============page universe and exploration============*/
+.app-universe, .app-exploration {
+    width: 100%;
+    height: 100%;
+}
+
+.universe, .exploration {
+    width: 64.8rem;
+    height: 27.9rem;
+    margin-top: 6.3rem;
+    margin-left: 10.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    color: var(--p-txt-color);
+    text-align: justify;
+}
