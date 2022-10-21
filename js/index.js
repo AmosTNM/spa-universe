@@ -8,5 +8,5 @@ router.swap(404, "/pages/404.html")
 
 router.handle()
 
-window.onpopstate = () => router.handle();
+window.onpopstate = () => router.handle()
 window.route = () => router.route()

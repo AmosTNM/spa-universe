@@ -11,6 +11,7 @@
     --bg-img-home: url(/assets/mountains-universe-1.png);
     --bg-img-universe: url(/assets/mountains-universe-2.png);
     --bg-img-exploration: url(/assets/mountains-universe-3.png);
+    --bg-img-404: url(/assets/image-black-hole-nasa-original1.webp);
 
     --menu-txt-color: #C4C4CC;
     --menu-txt-color-selected: #FFFFFF;
@@ -27,6 +28,9 @@ body.bg-img-universe {
 }
 body.bg-img-exploration {
     background-image: var(--bg-img-exploration);
+}
+body.bg-img-404 {
+    background-image: var(--bg-img-404);
 }
 
 body {
@@ -51,7 +55,7 @@ a {
     color: var(--menu-txt-color);
 }
 
-a:hover{
+.selected, a:hover{
     font-weight: 700;
     color: var(--menu-txt-color-selected);
     cursor: pointer;
@@ -113,7 +117,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 5rem;
 }
 
 .button:hover {
